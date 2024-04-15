@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: lightgray;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.heading{
+  background-color: rgb(250, 102, 225);
+  font-size: 50px;
+}
+h1{
+  background-color: rgb(214, 67, 251);
+}
+h2{
+  background-color: rgb(237, 102, 252);
+}
+p{
+  text-align: left;
+}
+img{
+  height: 450px;
+  width: 450px;
+  box-shadow: 1px 2px 2px 4px rgb(232, 106, 248);
+}
+img:hover{
+  border: 2px solid rgb(97, 5, 62);
+  /* transform: scale(1.2); */
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#img-1 {
+  height: 500px;
+  width: 90%;
+  margin-left: 80px;
+  margin-top: 15px;
+  animation: slideIn 1s ease forwards;
+}
+/* footer{
+  background-color: rgb(187, 224, 224);
+} */
+
+@keyframes slideAndRotate {
+  0% {
+    transform: translateY(-100%) rotate(-180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+#img-2 {
+  height: 500px;
+  width: 90%;
+  margin-left: 80px;
+  margin-top: 15px;
+  animation: slideAndRotate 1s ease forwards;
+}
+
+#img-3 {
+  height: 500px;
+  width: 90%;
+  margin-left: 80px;
+  margin-top: 15px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.zoom-in {
+  transform: scale(1.1);
+}
